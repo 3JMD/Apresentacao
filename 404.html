@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 · Página não encontrada | CBA X</title>
+<meta name="description" content="A página que você procura não foi encontrada no site institucional do CBA X — CBMERJ.">
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23E11B33'/%3E%3Cstop offset='1' stop-color='%238B0A1A'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M32 4 L56 12 L56 30 Q56 50 32 60 Q8 50 8 30 L8 12 Z' fill='url(%23g)' stroke='%23FFCB05' stroke-width='2'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-family='Helvetica,Arial' font-size='22' font-weight='900' fill='%23FFCB05'%3EX%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --red:#C8102E; --red-deep:#8B0A1A; --gold:#FFCB05; --bg:#0A0A0A;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{
+  background:radial-gradient(ellipse at center,#2A0A10,var(--bg) 70%);
+  color:#fff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  min-height:100vh;min-height:100svh;display:flex;align-items:center;justify-content:center;
+  overflow:hidden;position:relative;
+}
+.bg-num{
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  font-family:'Helvetica Neue Condensed',Impact,sans-serif;font-weight:900;
+  font-size:clamp(280px,55vw,700px);line-height:1;
+  color:transparent;-webkit-text-stroke:1px rgba(200,16,46,.25);
+  letter-spacing:.04em;pointer-events:none;user-select:none;z-index:1;
+}
+.glow{
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  width:80%;max-width:900px;height:60%;
+  background:radial-gradient(ellipse at center,rgba(200,16,46,.3),transparent 70%);
+  filter:blur(40px);pointer-events:none;z-index:0;
+}
+.wave{position:absolute;bottom:0;left:0;right:0;height:160px;z-index:1;opacity:.5}
+.content{
+  position:relative;z-index:5;text-align:center;padding:40px 24px;max-width:680px;
+}
+.kicker{
+  display:inline-block;padding:8px 18px;border:1px solid rgba(255,203,5,.5);
+  border-radius:999px;color:var(--gold);font-size:11px;letter-spacing:.3em;
+  font-weight:600;background:rgba(200,16,46,.15);text-transform:uppercase;margin-bottom:30px;
+}
+h1{
+  font-family:Georgia,'Times New Roman',serif;font-weight:900;font-style:italic;
+  font-size:clamp(36px,8vw,84px);line-height:1.05;margin-bottom:18px;
+}
+h1 em{color:var(--gold);font-style:italic}
+p{
+  font-size:clamp(14px,3vw,17px);color:#cbd5e1;line-height:1.7;margin-bottom:36px;
+  max-width:520px;margin-left:auto;margin-right:auto;
+}
+.cta{
+  display:inline-flex;align-items:center;gap:10px;padding:14px 32px;
+  background:linear-gradient(135deg,var(--red),var(--red-deep));
+  color:#fff;text-decoration:none;font-family:'Helvetica Neue',Impact,sans-serif;
+  font-weight:900;font-size:14px;letter-spacing:.25em;text-transform:uppercase;
+  border-radius:4px;border:1px solid var(--gold);transition:all .3s;
+}
+.cta:hover{background:linear-gradient(135deg,var(--gold),#E6A800);color:#0A0A0A}
+.cta svg{width:18px;height:18px}
+.brand{
+  position:absolute;top:24px;left:50%;transform:translateX(-50%);z-index:10;
+  font-family:'Helvetica Neue',Impact,sans-serif;font-weight:900;
+  font-size:14px;letter-spacing:.3em;color:var(--gold);
+}
+</style>
+</head>
+<body>
+  <div class="bg-num">404</div>
+  <div class="glow"></div>
+  <div class="brand">CBA X · CBMERJ</div>
+
+  <div class="content">
+    <div class="kicker">Página fora da rota</div>
+    <h1>Esta <em>página</em><br>não foi encontrada</h1>
+    <p>Mar revolto. A página que você procura não existe ou foi movida. Volte à orla — a página inicial te espera com 107 anos de história, 10 unidades e o lema do GMar.</p>
+    <a class="cta" href="./">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M5 12l7-7M5 12l7 7"/></svg>
+      Voltar à página inicial
+    </a>
+  </div>
+
+  <svg class="wave" viewBox="0 0 1440 160" preserveAspectRatio="none">
+    <path d="M0,80 C240,140 480,20 720,80 C960,140 1200,20 1440,80 L1440,160 L0,160 Z" fill="rgba(200,16,46,.15)"/>
+    <path d="M0,110 C240,60 480,160 720,110 C960,60 1200,160 1440,110 L1440,160 L0,160 Z" fill="rgba(200,16,46,.25)"/>
+  </svg>
+</body>
+</html>
